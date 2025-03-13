@@ -3,7 +3,7 @@
 // Função para buscar os cursos da API
 export async function getCursos() {
     try {
-        const response = await fetch("https://inglesadm-backend-java-springboot.onrender.com//cursos"); // Ajuste a URL de acordo com a sua API
+        const response = await fetch("https://inglesadm-backend-java-springboot.onrender.com/cursos"); // Ajuste a URL de acordo com a sua API
 
         if (!response.ok) {
             throw new Error(`Erro HTTP! Status: ${response.status}`);

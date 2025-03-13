@@ -10,7 +10,7 @@ function WeekdayCard({ day }) {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/alunos/${day.toLowerCase()}`)
+        axios.get(`https://inglesadm-backend-java-springboot.onrender.com/alunos/${day.toLowerCase()}`)
             .then(response => {
                 setStudents(response.data);
                 setIsLoading(false);

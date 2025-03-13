@@ -14,7 +14,7 @@ function Calendar() {
             const data = {};
             for (let day of days) {
                 try {
-                    const response = await axios.get(`http://localhost:8080/alunos/${day}`);
+                    const response = await axios.get(`https://inglesadm-backend-java-springboot.onrender.com/alunos/${day}`);
                     data[day] = response.data;
                 } catch (error) {
                     console.error(`Erro ao buscar alunos de ${day}:`, error);
